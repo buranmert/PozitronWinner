@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/icon" />
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/detail_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:scrollbars="vertical"
+        android:text="TextView" />
+    
+    <ListView android:id="@+id/list_cast"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/detail_synopsis"
+               android:background="#000000"
+               android:layout_weight="1"
+               android:drawSelectorOnTop="false"
+               android:headerDividersEnabled="true"
+               android:dividerHeight="1sp"
+               android:divider="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Go To IMDB"
+        android:textSize="15sp" />
+
+</RelativeLayout>
